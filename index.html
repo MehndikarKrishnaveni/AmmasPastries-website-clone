@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="./Home.css">
+    <title>Home - Ammas Pastries</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://ammaspastries.in/wp-content/uploads/2023/08/Ammas-Pastries-Logo.svg" alt="">
+        <div id="navlinks">
+            <a href="./Home.html">Cakes & Pastries</a>
+            <a href="">ThemeCakes</a>
+            <a href="">PhotoCakes</a>
+            <a href="">Snacks</a>
+            <a href="">Dessert</a>
+            <a href="">About Us</a>
+        </div>
+        <a href=""><h2>Rs0.00</h2></a>
+        <a href=""><i class="fa-solid fa-bag-shopping fa-2x"></i></a>
+    </header>
+    <!-- header ends  -->
+
+    <p id="para1"><i class="fa-solid fa-truck"></i> Free delivery in 45-60 mins <i class="fa-regular fa-clock"></i> from 8:30 AM to 9:30 PM in India <i class="fa-solid fa-flag"></i></p>
+    <br><br>
+    <div id="container1">
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/12/Step-Cake-150x150.webp" alt="">
+                <p>Step 🎂<br> Cakes</p>
+            </a>
+        </div>
+
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/12/baby-shower-150x150.webp" alt="">
+                <p>Baby 👼🏻<br>
+                    Shower</p>
+            </a>
+        </div>
+
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/09/AL5547-1-150x150.webp" alt="">
+                <p>Cocomelon 🍉<br>
+                    Cakes</p>
+            </a>
+        </div>
+
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/09/WEDDING-CAKES-150x150.webp" alt="">
+                <p>💒 Wedding<br>
+                    Cakes</p>
+            </a>
+        </div>
+
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/09/6months-150x150.webp" alt="">
+                <p>6 Months 👼🏻<br>
+                    Cakes</p>
+            </a>
+        </div>
+
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/09/AL5583-150x150.webp" alt="">
+                <p>👻 Creative👸🏻<br>
+                    Designs 🪄</p>
+            </a>
+        </div>
+
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/09/rainbow-150x150.webp" alt="">
+                <p>Rainbow <br>
+                    Cakes 🌈</p>
+            </a>
+        </div>
+
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/09/space-150x150.webp" alt="">
+                <p>Space 🚀<br>
+                    Cakes</p>
+            </a>
+        </div>
+
+        <div class="step-cake">
+            <a href="">
+                <img src="https://ammaspastries.in/wp-content/uploads/2023/09/1st-150x150.webp" alt="">
+                <p>New 🥇 1st<br>
+                    Born</p>
+            </a>
+        </div>
+    </div>
+
+    <h1 id="head1">What's New ?</h1>
+
+    <div id="flex1">
+        <a href=""><button>ThemeCakes</button></a>
+        <a href=""><button>Snacks</button></a>
+        <a href=""><button>PhotoCakes</button></a>
+        <a href=""><button>Call to Order</button></a>
+    </div>
+
+    <div id="flex2">
+        <img src="https://b.zmtcdn.com/data/pictures/chains/9/50019/50197eb3b04871d9df11e62c3c424169.jpg" alt="">
+        <div id="div1-flex2">
+            <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Delivery.webp" alt="">
+            <h2>Free Delivery</h2>
+            <p>T&C Applied</p>
+        </div>
+    </div>
+
+    <h1 id="head2">Categories</h1>
+
+    <p id="para2">Delightful Desserts For Every <br>
+        Explore Our Categories & <br>
+        Make Your Celebration Extra Special.</p>
+    <br><br>
+
+    <div id="grid-container">
+        <ul id="grid1" class="grid">
+            <li id="item1">
+                <div id="sec1" class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Blueberry--150x150.webp" alt="">
+                    <div id="sec1-d1" class="sec1-d1">
+                        <p>Exotic 🍓 Fruits</p>
+                        <div id="btns" class="btns">
+                            <a href=""><button>Fruits</button></a>
+                            <a href=""><button>Fresh</button></a>
+                        </div>
+                        <small>"Exotic Fruit Medley: Nature's Delight."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item2">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/White-Forest-Heart-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Regular Cakes 🍮</p>
+                        <div class="btns"><a href=""><button>Chocolates</button></a>
+                            <a href=""><button>Galaxy</button></a>
+                        </div>
+                        <small>"Delicious Classic Cakes For Everyone."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item3">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/12/Step-Cake.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Theme Cakes 🤖</p>
+                        <div class="btns"><a href=""><button>Velvet</button></a>
+                            <a href=""><button>Sponge</button></a>
+                        </div>
+                        <small>"Deliciously Themed Celebration In Every Slice!"</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item4">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Galaxy-Round-scaled-300x300.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Mousse & Cheese 🧀</p>
+                        <div class="btns">
+                            <a href=""><button>Cheese</button></a>
+                            <a href=""><button>Eggless</button></a>
+                        </div>
+                        <small>"Whipped Indulgence For Gourmet Palates."</small>
+                    </div>
+                </div>
+            </li>
+            <li item5>
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Russain-Honey-Cake-Circle-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Something 🎀 Special</p>
+                        <div class="btns">
+                            <a href=""><button>Rainbow</button></a>
+                            <a href=""><button>Honey</button></a>
+                        </div>
+                        <small>"Unleash Extraordinary Experiences With Innovation."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item6">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2024/01/Vanilla-Chocolate-Pastry-Heart-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>UAE Exclusive 🇦🇪</p>
+                        <div class="btns">
+                            <a href=""><button>UAE</button></a>
+                        </div>
+                        <small>Only Available In UAE & Delivery In UAE</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item7">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/09/Vanilla-Butterscotch-Round-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>🎂 Premium Cakes</p>
+                        <div class="btns">
+                            <a href=""><button>Sponge</button></a>
+                            <a href=""><button>1 Pcs</button></a>
+                        </div>
+                        <small>"Decadent, Artisanal, Premium Indulgence Awaits."</small>
+                    </div>
+                </div>
+            </li>
+            <li item8>
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2024/01/PhotoCake-Preview-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Photo 📷 Cakes</p>
+                        <div class="btns">
+                            <a href=""><button>Photos</button></a>
+                            <a href=""><button>Moments</button></a>
+                        </div>
+                        <small>Galaxy Cake, A Cosmic Fusion Of Flavors That</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item9">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2024/01/Black-Currant-Heart-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>INDIA Exclusive 🇮🇳</p>
+                        <div class="btns">
+                            <a href=""><button>INDIA</button></a>
+                        </div>
+                        <small>Only Available In IND & Delivery In Karnataka, Kerala & Hyderabad .. Only</small>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <br><br><br>
+
+        <ul class="grid">
+            <li id="item-1">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/high-fiber-bread-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Breads</p>
+                        <div class="btns">
+                            <a href=""><button>Bread</button></a>
+                        </div>
+                        <small>"Freshly Baked Artisanal Bread Collection."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item-2">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Veg-Puff-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Puff</p>
+                        <div class="btns">
+                            <a href=""><button>Bread</button></a>
+                        </div>
+                        <small>"Plush Comfort In Every Puff."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item-3">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2024/02/ChocoChip-Cookie-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Cookies 🍪</p>
+                        <div class="btns">
+                            <a href=""><button>Cookies</button></a>
+                        </div>
+                        <small>"Decadent Bliss In Every Bite."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item-4">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Chicken-Burger-1-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Burger 🍔</p>
+                        <div class="btns">
+                            <a href=""><button>burger</button></a>
+                        </div>
+                        <small>"Ultimate Burger's , Efficiency Redefined Bliss."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item-5">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Chicken-Burger-1-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Burger 🍔</p>
+                        <div class="btns">
+                            <a href=""><button>burger</button></a>
+                        </div>
+                        <small>"Ultimate Burger's , Efficiency Redefined Bliss."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item-6">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Chicken-Burger-1-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Burger 🍔</p>
+                        <div class="btns">
+                            <a href=""><button>burger</button></a>
+                        </div>
+                        <small>"Ultimate Burger's , Efficiency Redefined Bliss."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item-7">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Chicken-Burger-1-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Burger 🍔</p>
+                        <div class="btns">
+                            <a href=""><button>burger</button></a>
+                        </div>
+                        <small>"Ultimate Burger's , Efficiency Redefined Bliss."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item-8">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Chicken-Burger-1-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Burger 🍔</p>
+                        <div class="btns">
+                            <a href=""><button>burger</button></a>
+                        </div>
+                        <small>"Ultimate Burger's , Efficiency Redefined Bliss."</small>
+                    </div>
+                </div>
+            </li>
+            <li id="item-9">
+                <div class="sections">
+                    <img src="https://ammaspastries.in/wp-content/uploads/2023/08/Chicken-Burger-1-150x150.webp" alt="">
+                    <div class="sec1-d1">
+                        <p>Burger 🍔</p>
+                        <div class="btns">
+                            <a href=""><button>burger</button></a>
+                        </div>
+                        <small>"Ultimate Burger's , Efficiency Redefined Bliss."</small>
+                    </div>
+                </div>
+            </li>
+            
+            
+    </div>
+    
+
+</body>
+</html>
